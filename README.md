@@ -39,30 +39,7 @@ This project delivers a complete, modular, and grounded solution that:
 
 ---
 
-## 🏗️ Architecture & Pipeline
 
-```mermaid
-graph TD
-    A[Automotive Service Manual PDF] --> B[PDFProcessor (PyMuPDF)]
-    B --> C[Page-Level Text & Page #s]
-    C --> D[TextCleaner (Normalizes Unicode, bullets, lines)]
-    D --> E[DocumentChunker (Sliding window with overlap)]
-    E --> F[EmbeddingEngine (all-MiniLM-L6-v2)]
-    F --> G[(FAISS Vector Index + Metadata Cache)]
-    
-    H[User Natural Language Query] --> I[EmbeddingEngine]
-    I --> J[SpecRetriever (Cosine Similarity Search)]
-    G --> J
-    J --> K[Top-K Evidence Chunks + Page Provenance]
-    
-    K --> L{LLM Configured & Enabled?}
-    L -- Yes --> M[LLMExtractor: JSON-Enforced LLM API]
-    L -- No / Fallback --> N[LLMExtractor: Deterministic Regex & Table Parser]
-    
-    M --> O[Schema Validation (Pydantic SpecItem)]
-    N --> O
-    O --> P[Streamlit UI Dashboard & JSON/CSV Exports]
-```
 
 ### Detailed Pipeline Stages:
 1. **Extraction**: `PyMuPDF` reads each page, retaining 1-indexed page numbers.
