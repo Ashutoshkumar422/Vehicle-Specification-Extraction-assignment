@@ -6,23 +6,7 @@ Built for the **Predii Vehicle Specification Extraction Assignment**.
 
 ---
 
-## 📌 Table of Contents
-1. [Overview & Objective](#overview--objective)
-2. [Key Features](#key-features)
-3. [Architecture & Pipeline](#architecture--pipeline)
-4. [Technology Stack](#technology-stack)
-5. [Project Structure](#project-structure)
-6. [Prerequisites](#prerequisites)
-7. [Installation & Setup (Windows)](#installation--setup-windows)
-8. [Configuration & Optional LLM](#configuration--optional-llm)
-9. [Running the Streamlit UI](#running-the-streamlit-ui)
-10. [Running Automated Tests](#running-automated-tests)
-11. [Command-Line / Programmatic Usage](#command-line--programmatic-usage)
-12. [Evaluation & Grounding Methodology](#evaluation--grounding-methodology)
-13. [Real Service Manual Audit Results (852 Pages)](#-real-service-manual-audit-results-852-pages)
-14. [Design Choices, Limitations & Future Work](#design-choices-limitations--future-work)
 
----
 
 ## 📖 Overview & Objective
 
@@ -184,49 +168,6 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements.txt
 ```
 
----
-
-## 🔑 Configuration & Optional LLM
-
-Copy `.env.example` to `.env`:
-
-```powershell
-copy .env.example .env
-```
-
-Edit `.env` (optional):
-```env
-# Optional: Provide OpenAI API Key if you wish to use GPT-4o-mini
-OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_MODEL=gpt-4o-mini
-
-# Chunking and retrieval defaults
-CHUNK_SIZE=600
-CHUNK_OVERLAP=120
-DEFAULT_TOP_K=5
-```
-
-> **Note**: An API key is **NOT required**. If `OPENAI_API_KEY` is omitted, the pipeline automatically runs the high-accuracy rule-based extraction fallback.
-
----
-
-## 🖥️ Running the Streamlit UI
-
-Start the application with either:
-
-```powershell
-# Option A: One-click launcher (Windows)
-.\run.bat
-
-# Option B: Using the runner script
-python scripts/run_app.py
-
-# Option C: Directly via Streamlit
-streamlit run app.py
-```
-
-The application will launch in your browser at `http://localhost:8501`.
-
 ### 📸 Application Output & Dashboard:
 
 ![Vehicle Specification Extraction Streamlit Output](assets/demo_screenshot.png)
@@ -243,64 +184,8 @@ The application will launch in your browser at `http://localhost:8501`.
 
 ---
 
-## 🧪 Running Automated Tests
 
-Run the full pytest suite with:
 
-```powershell
-pytest -v
-```
-
-All 20 unit, integration, and regression tests execute in < 1 second:
-```
-tests/test_chunker.py::test_chunker_invalid_params PASSED
-tests/test_chunker.py::test_chunker_short_text PASSED
-tests/test_chunker.py::test_chunker_long_text_overlapping PASSED
-tests/test_exports.py::test_export_utils_to_dataframe_and_csv PASSED
-tests/test_exports.py::test_assignment_format_json PASSED
-tests/test_pdf_processor.py::test_pdf_processor_extract_pages PASSED
-tests/test_pdf_processor.py::test_pdf_processor_metadata PASSED
-tests/test_pipeline.py::test_rule_based_extractor_torque_table PASSED
-tests/test_pipeline.py::test_rule_based_extractor_antonym_rejection PASSED
-tests/test_pipeline.py::test_rule_based_extractor_part_number PASSED
-tests/test_pipeline.py::test_rule_based_extractor_fluid_capacity PASSED
-tests/test_pipeline.py::test_rule_based_extractor_not_found PASSED
-tests/test_pipeline.py::test_adjacent_row_isolation_brake_disc_shield PASSED
-tests/test_pipeline.py::test_fluid_capacity_table_header_cleaning PASSED
-tests/test_pipeline.py::test_component_match_score_metrics PASSED
-tests/test_retriever.py::test_vector_store_build_and_search PASSED
-tests/test_retriever.py::test_spec_retriever_filtering PASSED
-tests/test_schema.py::test_spec_item_valid PASSED
-tests/test_schema.py::test_spec_item_missing_required PASSED
-tests/test_schema.py::test_extraction_response_structure PASSED
-```
-
----
-
-## 💻 Command-Line / Programmatic Usage
-
-You can also import and use the pipeline directly in your Python code:
-
-```python
-from src.pipeline import SpecExtractionPipeline
-from src.export_utils import ExportUtils
-
-# Initialize pipeline
-pipeline = SpecExtractionPipeline()
-
-# Index PDF (indexes all 852 pages; uses cached index if already computed)
-pipeline.index_document(
-    source="sample-service-manual 1.pdf",
-    doc_name="Ford_F150_Manual",
-    max_pages=None  # Full manual
-)
-
-# Execute specification query
-response = pipeline.query("Torque for brake disc shield bolts", top_k=5)
-
-# Print assignment-compliant JSON output
-print(ExportUtils.to_assignment_format_json(response))
-```
 
 **Example Assignment JSON Output:**
 ```json
@@ -336,49 +221,3 @@ To prevent false-positive extraction of adjacent table rows (e.g., extracting "B
 - **Antonym Disqualification**: Automatically rejects conflicting spatial qualifiers (e.g., `upper` vs `lower`, `front` vs `rear`, `inner` vs `outer`).
 - **Stem Normalization**: Inflection normalization (`bolts` -> `bolt`, `nuts` -> `nut`) ensures accurate matching across syntactic variants.
 
-### 4. Zero Hallucination Guarantee
-When queried with an ungrounded, fabricated, or out-of-domain question (such as *"Submarine ballast tank pressure specification"*), the pipeline returns:
-```json
-{
-  "query": "Submarine ballast tank pressure specification",
-  "status": "not_found",
-  "specifications": [],
-  "extraction_method": "rule_based_fallback",
-  "message": "No matching specification found in the retrieved manual passages."
-}
-```
-No numbers, units, or citations are ever hallucinated.
-
----
-
-## 📊 Real Service Manual Audit Results (852 Pages)
-
-The following real queries were executed against the full 852-page 2014 Ford F-150 Workshop Manual:
-
-| # | Query | Extracted Component | Spec Type | Extracted Value | 1-Indexed PDF Page | Ground Truth Status |
-|---|---|---|---|---|---|---|
-| 1 | Torque for brake disc shield bolts | Brake disc shield bolts | Torque | 18 Nm (159 lb-in) / 17 Nm (150 lb-in) | Page 636 (Brakes), Page 24 (RWD), Page 59 (4WD) | **Verified Correct** (Adjacent rows strictly excluded) |
-| 2 | Lower ball joint nut torque | Lower ball joint nut | Torque | 175 Nm (129 lb-ft) | Page 24 | **Verified Correct** |
-| 3 | Stabilizer bar link nut torque | Stabilizer bar link nuts | Torque | 70 Nm (52 lb-ft) / 80 Nm (59 lb-ft SVT) | Page 24, Page 59 | **Verified Correct** |
-| 4 | Shock absorber lower nut torque | Shock absorber lower nuts | Torque | 90 Nm (66 lb-ft) / 550 Nm (406 lb-ft SVT) | Page 24, Page 59 | **Verified Correct** |
-| 5 | Tie-rod end nut torque | Tie-rod end nut | Torque | 115 Nm (85 lb-ft) | Page 24, Page 578 | **Verified Correct** |
-| 6 | Rear axle lubricant fluid capacity | Rear Axle Lubricant | Fluid Capacity | 1.66 L (3.5 pt) / 2.84 L (6.0 pt) | Page 449 (Front Axle), Page 258 (Rear Axle) | **Verified Correct** |
-| 7 | Brake fluid capacity | High Performance DOT 3 Motor Vehicle Brake Fluid | Fluid Capacity | 3.0 pt (1,420 ml) | Page 636, Page 599, Page 652 | **Verified Correct** |
-| 8 | Part number for shock absorber lower nut | Shock absorber lower nut | Part Number | W520214 | Page 132 (Item 2), Page 133, Page 135 | **Verified Correct** |
-| 9 | Part number for spring-to-frame bolt | Spring-to-frame bolt | Part Number | W709627 | Page 135 (Item 1) | **Verified Correct** |
-| 10 | Submarine ballast tank pressure specification | *None* | *None* | *None* | *None* | **Verified Correct** (`not_found`, 0 hallucinations) |
-
----
-
-## 🔮 Design Choices, Limitations & Future Work
-
-### Design Choices:
-- **PyMuPDF (`fitz`)**: Fast C-based text extraction (extracts all 852 pages in 0.90 seconds). Completely avoids slow, error-prone OCR.
-- **FAISS Inner-Product Search**: Flat inner-product over unit-normalized dense embeddings guarantees exact cosine similarity without vector distortion.
-- **Dual-Tier Extractor Architecture**: Provides a zero-cost, 100% deterministic offline regex and table parsing engine, alongside an optional OpenAI JSON-mode extractor.
-- **Persistent Hashed Caching**: Full vector indexes and chunk metadata are hashed by file content, ensuring subsequent runs load in milliseconds without redundant re-indexing.
-
-### Limitations & Future Work:
-1. **Multi-Page Merged Tables**: In complex manual sections where a table spans across multiple pages without repeating headers, hierarchical parent-child chunk context propagation can be added.
-2. **Hybrid BM25 Lexical + Dense Vector Retrieval**: Adding sparse BM25 indexing alongside dense embeddings will further optimize retrieval for rare alphanumeric part numbers.
-3. **Vision-Language Models (VLM) for Diagrams**: For exploded diagrams and schematic callouts, integrating a VLM (such as ColPali or Gemini Multimodal) could extract callout bubble labels.
