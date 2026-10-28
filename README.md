@@ -92,46 +92,7 @@ graph TD
 
 ---
 
-## 📁 Project Structure
 
-```
-vehicle_spec_extraction_project/
-├── app.py                      # Interactive Streamlit application
-├── requirements.txt            # Python dependencies (pinned pytest<9.2.0)
-├── README.md                   # Comprehensive documentation
-├── run.bat                     # Windows one-click execution script
-├── .env.example                # Template for environment configuration
-├── .gitignore                  # Git ignore rules
-├── assets/
-│   └── demo_screenshot.png     # Streamlit UI dashboard output screenshot
-├── src/
-│   ├── __init__.py             # Package declaration
-│   ├── config.py               # Central settings and environment variables
-│   ├── schema.py               # Pydantic schemas (SpecItem, EvidenceChunk, ExtractionResponse)
-│   ├── pdf_processor.py        # PyMuPDF extractor preserving original page numbers
-│   ├── text_cleaner.py         # Text cleaner for PDF artifacts, bullets, and table lines
-│   ├── chunker.py              # Overlapping sliding window document chunker
-│   ├── embeddings.py           # Sentence-transformers lazy-loading embedding engine
-│   ├── vector_store.py         # Persistent FAISS IndexFlatIP with JSON metadata
-│   ├── retriever.py            # Semantic retriever with deduplication and thresholding
-│   ├── llm_extractor.py        # Dual extractor: LLM API + offline rule-based fallback
-│   ├── export_utils.py         # Serializers for DataFrame, CSV, and Assignment JSON
-│   └── pipeline.py             # End-to-end orchestration pipeline with caching
-├── tests/
-│   ├── __init__.py
-│   ├── test_schema.py          # Tests schema validation and serialization
-│   ├── test_chunker.py         # Tests sliding window overlap and boundaries
-│   ├── test_pdf_processor.py   # Tests PDF extraction with in-memory fixture
-│   ├── test_exports.py         # Tests CSV, DataFrame, and assignment JSON formatting
-│   ├── test_retriever.py       # Tests FAISS search, cosine similarity, and deduplication
-│   └── test_pipeline.py        # Tests extraction logic and grounded not-found handling
-├── scripts/
-│   └── run_app.py              # Launch script for Streamlit UI
-├── data/
-│   └── .gitkeep                # Place manual PDF here or use file uploader
-└── storage/
-    └── .gitkeep                # Generated vector indexes and metadata
-```
 
 ---
 
