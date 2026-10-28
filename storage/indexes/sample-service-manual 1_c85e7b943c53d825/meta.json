@@ -1,0 +1,11 @@
+{
+  "total_chunks": 1183,
+  "dimension": 384,
+  "custom_metadata": {
+    "doc_name": "sample-service-manual 1.pdf",
+    "doc_hash": "c85e7b943c53d825",
+    "page_count": 852,
+    "chunk_size": 1200,
+    "chunk_overlap": 200
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "total_chunks": 121,
+  "dimension": 384,
+  "custom_metadata": {
+    "doc_name": "VEHCOM-D-26-01407.pdf",
+    "doc_hash": "235f3ea43da79ce7",
+    "page_count": 10,
+    "chunk_size": 600,
+    "chunk_overlap": 120
+  }
+}

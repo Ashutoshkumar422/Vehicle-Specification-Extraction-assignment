@@ -1,0 +1,970 @@
+[
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p1_c0",
+    "page_number": 1,
+    "text": "Vehicular Communications\n\nFedMAPPO: Physics-Guided Federated Multi-Agent Reinforcement Learning for\nRIS-UAV Swarms Under Deterministic Blockage\n• -Manuscript Draft--\n\nManuscript Number:\nVEHCOM-D-26-01407\nArticle Type:\nFull Length Article\nKeywords:\nFederated learning, multi-agent reinforcement learning, reconfigurable intelligent\nsurface, unmanned aerial\nvehicle, urban blockage, energy efficiency, physical-layer security\nCorresponding Author:\nArshee Naz\nNational Institute of Technology Delhi\nFirst Author:\nAshutosh Kumar\nOrder of Authors:\nAshutosh Kumar\nArshee Naz\nKaran Verma\nAbstract:",
+    "start_idx": 0,
+    "end_idx": 591,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p1_c1",
+    "page_number": 1,
+    "text": "tute of Technology Delhi\nFirst Author:\nAshutosh Kumar\nOrder of Authors:\nAshutosh Kumar\nArshee Naz\nKaran Verma\nAbstract:\nUnmanned aerial vehicle (UAV) swarms equipped with reconfigurable intelligent\nsurfaces (RIS) restore millimetre-wave\nconnectivity in dense urban environments where severe building blockages sever\ndirect base-station links. However, coordinating an aerial swarm couples complex\nthree-dimensional (3D) flight dynamics, user association, directional relaying,\ncoherent inter-UAV interference, battery depletion, and terrestrial eavesdropper\nexposure.",
+    "start_idx": 471,
+    "end_idx": 1039,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p1_c2",
+    "page_number": 1,
+    "text": "ation, directional relaying,\ncoherent inter-UAV interference, battery depletion, and terrestrial eavesdropper\nexposure. Centralized architectures\nimpose prohibitive communication overhead and compromise information privacy,\nwhile conventional federated reinforcement learning frameworks decouple client\nparticipation from physical propagation and platform constraints.",
+    "start_idx": 919,
+    "end_idx": 1288,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p1_c3",
+    "page_number": 1,
+    "text": "ted reinforcement learning frameworks decouple client\nparticipation from physical propagation and platform constraints. To\nresolve these challenges, this paper develops Federated Multi-Agent Proximal Policy\nOptimization (FedMAPPO), a\nphysics-guided learning framework that grounds multi-agent coordination in\ndeterministic 3D urban blockage geometry.\nIn FedMAPPO, ray-box building intersections simultaneously govern downlink service\nfeasibility, inter-UAV directional\nrelaying, eavesdropper line-of-sight exposure, and federated uplink connectivity.",
+    "start_idx": 1168,
+    "end_idx": 1719,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p1_c4",
+    "page_number": 1,
+    "text": "ce\nfeasibility, inter-UAV directional\nrelaying, eavesdropper line-of-sight exposure, and federated uplink connectivity.\nOperating strictly on local observations, each UAV autonomously optimizes its\ncontinuous 3D flight trajectory and a scalar service bid, which the network\nresolves through capacity-constrained matching.",
+    "start_idx": 1599,
+    "end_idx": 1921,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p1_c5",
+    "page_number": 1,
+    "text": "inuous 3D flight trajectory and a scalar service bid, which the network\nresolves through capacity-constrained matching. Crucially, a physical participation gate\nadmits only UAVs that retain\nsufficient battery reserves and unobstructed uplink channels, restricting model\naggregation to physically viable platforms\nwhile accounting for exact mean co-channel interference under closed-form RIS\nreflection. Extensive simulations with\n12 UAVs, 50 ground users, and two eavesdroppers over 3000 training episodes show\nthat FedMAPPO attains 7446 bit/J\nin fairness-weighted energy efficiency.",
+    "start_idx": 1801,
+    "end_idx": 2385,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p1_c6",
+    "page_number": 1,
+    "text": "eavesdroppers over 3000 training episodes show\nthat FedMAPPO attains 7446 bit/J\nin fairness-weighted energy efficiency. This outcome represents a 136% gain over\nindependent learners and exceeds four\ncentralized baselines by 113% to 170% (Holm-adjusted p ≤ 0.003), reducing unserved\nusers to 1.75 out of 50 compared\nto 13.9–20.0 for benchmarks.",
+    "start_idx": 2265,
+    "end_idx": 2609,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p1_c7",
+    "page_number": 1,
+    "text": "113% to 170% (Holm-adjusted p ≤ 0.003), reducing unserved\nusers to 1.75 out of 50 compared\nto 13.9–20.0 for benchmarks. Ultimately, FedMAPPO establishes that combining\nphysical eligibility gating with decentralized parameter exchange drives resilient swarm\ncoordination across diverse aggregation rules without exposing raw\nsensory data.\nOpposed Reviewers:\nPowered by Editorial Manager® and ProduXion Manager® from Aries Systems Corporation",
+    "start_idx": 2489,
+    "end_idx": 2929,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p2_c0",
+    "page_number": 2,
+    "text": "Arshee Naz (Corresponding Author)\nDepartment of Computer Science and Engineering\nNational Institute of Technology Delhi\nNew Delhi 110040, India\nEmail: arsheenaz@nitdelhi.ac.in\nDate: October 8, 2026\nTo:\nEditor-in-Chief,\nVehicular Communications,\nElsevier B.V.\nSubject: Submission of Original Research Article to Vehicular Communications\nDear Editor-in-Chief,\nWe are pleased to submit our original research manuscript entitled:\n“FedMAPPO: Physics-Guided Federated Multi-Agent Reinforcement Learning for RIS-UAV Swarms Under\nDeterministic Blockage”",
+    "start_idx": 0,
+    "end_idx": 546,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p2_c1",
+    "page_number": 2,
+    "text": "“FedMAPPO: Physics-Guided Federated Multi-Agent Reinforcement Learning for RIS-UAV Swarms Under\nDeterministic Blockage”\nby Ashutosh Kumar, Arshee Naz (Corresponding Author), and Karan Verma for consideration for publication as\na regular research article in Vehicular Communications.\nResearch Focus and Core Contributions:\nUrban mmWave aerial communication networks face severe challenges from building blockage, inter-UAV inter-\nference, battery drain, and passive eavesdropping.",
+    "start_idx": 426,
+    "end_idx": 906,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p2_c2",
+    "page_number": 2,
+    "text": "orks face severe challenges from building blockage, inter-UAV inter-\nference, battery drain, and passive eavesdropping. In this work, we propose FedMAPPO, a novel physics-guided\nfederated multi-agent reinforcement learning (MARL) framework designed specifically for swarms of UAVs carry-\ning reconfigurable intelligent surfaces (RIS). Building directly upon and extending recent advances published in\nVehicular Communications on UAV-assisted multi-RIS networks, aerial energy eﬀiciency, and federated learning,\nthe key contributions of this paper include:\n1.",
+    "start_idx": 786,
+    "end_idx": 1345,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p2_c3",
+    "page_number": 2,
+    "text": "ed multi-RIS networks, aerial energy eﬀiciency, and federated learning,\nthe key contributions of this paper include:\n1. Unified Physical Coupling: Formulating a single geometric blockage model that simultaneously dictates user\naccess, inter-UAV half-space directional relaying, passive eavesdropper leakage, and federated learning eligi-\nbility under rotary-wing propulsion and battery dynamics.\n2.",
+    "start_idx": 1225,
+    "end_idx": 1624,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p2_c4",
+    "page_number": 2,
+    "text": "assive eavesdropper leakage, and federated learning eligi-\nbility under rotary-wing propulsion and battery dynamics.\n2. Physics-Gated Federated Coordination: Enforcing physical participation gates conditioned on battery head-\nroom and uplink feeder viability, resolving user service via learned bids and capacity-constrained bipartite\nmatching without requiring unconstrained participation.\n3.",
+    "start_idx": 1504,
+    "end_idx": 1898,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p2_c5",
+    "page_number": 2,
+    "text": "service via learned bids and capacity-constrained bipartite\nmatching without requiring unconstrained participation.\n3. Extensive Benchmarking and Empirical Validation: In extensive 3000-episode simulations with 12 UAVs, 50\nground users, and 72 urban buildings, FedMAPPO achieves 7446 bit/J of fairness-weighted energy eﬀiciency\n(+136.4% over decentralized IPPO and +113% to +170% over centralized PPO, SAC, TD3, and EPPO-\ninspired baselines, pHolm ≤0.003), reducing unserved ground users from ∼14–20 to 1.75.\nDeclarations:",
+    "start_idx": 1778,
+    "end_idx": 2302,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p2_c6",
+    "page_number": 2,
+    "text": "AC, TD3, and EPPO-\ninspired baselines, pHolm ≤0.003), reducing unserved ground users from ∼14–20 to 1.75.\nDeclarations:\n• This manuscript represents original, unpublished work and is not currently under consideration elsewhere.\n• All authors have read and approved the final manuscript and agree with its submission to Vehicular Commu-\nnications.\n• The authors declare no competing financial interests or personal relationships that could have influenced this\nwork.\nThank you very much for your time and consideration of our manuscript.",
+    "start_idx": 2182,
+    "end_idx": 2719,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p2_c7",
+    "page_number": 2,
+    "text": "ationships that could have influenced this\nwork.\nThank you very much for your time and consideration of our manuscript. We look forward to hearing from you\nregarding the peer review process.\nSincerely,\nArshee Naz (Corresponding Author, on behalf of all authors)\nDepartment of Computer Science and Engineering, National Institute of Technology Delhi, New Delhi, India\nEmail: arsheenaz@nitdelhi.ac.in\nCo-authors: Ashutosh Kumar (ashutoshkumarskt.29@gmail.com), Karan Verma (karanverma@nitdelhi.ac.in)\nCover letter",
+    "start_idx": 2599,
+    "end_idx": 3110,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c0",
+    "page_number": 3,
+    "text": "FedMAPPO: Physics-Guided Federated Multi-Agent Reinforcement Learning for\nRIS-UAV Swarms Under Deterministic Blockage\nAshutosh Kumara, Arshee Naza,∗, Karan Vermaa\naDepartment of Computer Science and Engineering, National Institute of Technology Delhi, New Delhi, India\nashutoshkumarskt.29@gmail.com, arsheenaz@nitdelhi.ac.in, karanverma@nitdelhi.ac.in\nAbstract\nUnmanned aerial vehicle (UAV) swarms equipped with reconfigurable intelligent surfaces (RIS) restore millimetre-wave\nconnectivity in dense urban environments where severe building blockages sever direct base-station links.",
+    "start_idx": 0,
+    "end_idx": 584,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c1",
+    "page_number": 3,
+    "text": "llimetre-wave\nconnectivity in dense urban environments where severe building blockages sever direct base-station links. However, coor-\ndinating an aerial swarm couples complex three-dimensional (3D) flight dynamics, user association, directional relaying,\ncoherent inter-UAV interference, battery depletion, and terrestrial eavesdropper exposure. Centralized architectures\nimpose prohibitive communication overhead and compromise information privacy, while conventional federated rein-\nforcement learning frameworks decouple client participation from physical propagation and platform constraints.",
+    "start_idx": 464,
+    "end_idx": 1062,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c2",
+    "page_number": 3,
+    "text": "d rein-\nforcement learning frameworks decouple client participation from physical propagation and platform constraints. To\nresolve these challenges, this paper develops Federated Multi-Agent Proximal Policy Optimization (FedMAPPO), a\nphysics-guided learning framework that grounds multi-agent coordination in deterministic 3D urban blockage geometry.\nIn FedMAPPO, ray-box building intersections simultaneously govern downlink service feasibility, inter-UAV directional\nrelaying, eavesdropper line-of-sight exposure, and federated uplink connectivity.",
+    "start_idx": 942,
+    "end_idx": 1493,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c3",
+    "page_number": 3,
+    "text": "ce feasibility, inter-UAV directional\nrelaying, eavesdropper line-of-sight exposure, and federated uplink connectivity. Operating strictly on local observa-\ntions, each UAV autonomously optimizes its continuous 3D flight trajectory and a scalar service bid, which the network\nresolves through capacity-constrained matching.",
+    "start_idx": 1373,
+    "end_idx": 1697,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c4",
+    "page_number": 3,
+    "text": "inuous 3D flight trajectory and a scalar service bid, which the network\nresolves through capacity-constrained matching. Crucially, a physical participation gate admits only UAVs that retain\nsuﬀicient battery reserves and unobstructed uplink channels, restricting model aggregation to physically viable platforms\nwhile accounting for exact mean co-channel interference under closed-form RIS reflection. Extensive simulations with\n12 UAVs, 50 ground users, and two eavesdroppers over 3000 training episodes show that FedMAPPO attains 7446 bit/J\nin fairness-weighted energy eﬀiciency.",
+    "start_idx": 1577,
+    "end_idx": 2159,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c5",
+    "page_number": 3,
+    "text": "eavesdroppers over 3000 training episodes show that FedMAPPO attains 7446 bit/J\nin fairness-weighted energy eﬀiciency. This outcome represents a 136% gain over independent learners and exceeds four\ncentralized baselines by 113% to 170% (Holm-adjusted p ≤0.003), reducing unserved users to 1.75 out of 50 compared\nto 13.9–20.0 for benchmarks.",
+    "start_idx": 2039,
+    "end_idx": 2382,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c6",
+    "page_number": 3,
+    "text": "113% to 170% (Holm-adjusted p ≤0.003), reducing unserved users to 1.75 out of 50 compared\nto 13.9–20.0 for benchmarks. Ultimately, FedMAPPO establishes that combining physical eligibility gating with decen-\ntralized parameter exchange drives resilient swarm coordination across diverse aggregation rules without exposing raw\nsensory data.\nKeywords: Federated learning, multi-agent reinforcement learning, reconfigurable intelligent surface, unmanned aerial\nvehicle, urban blockage, energy eﬀiciency, physical-layer security\n1.",
+    "start_idx": 2262,
+    "end_idx": 2790,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c7",
+    "page_number": 3,
+    "text": "configurable intelligent surface, unmanned aerial\nvehicle, urban blockage, energy eﬀiciency, physical-layer security\n1. Introduction\nIn dense urban environments,\ngeometric blockage\ndominates wireless coverage more severely than trans-\nmit power: buildings frequently sever direct line-of-sight\n(LoS) links between base stations (BSs) and ground users,\nextinguishing millimetre-wave signals.\nUnmanned aerial\nvehicles (UAVs) establish flexible alternative propagation\npaths by leveraging three-dimensional (3D) mobility to\ncircumvent obstacles [1, 2].\nFurthermore, mounting re-",
+    "start_idx": 2670,
+    "end_idx": 3246,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c8",
+    "page_number": 3,
+    "text": "opagation\npaths by leveraging three-dimensional (3D) mobility to\ncircumvent obstacles [1, 2].\nFurthermore, mounting re-\nconfigurable intelligent surfaces (RISs) on UAVs enhances\nspectral and energy eﬀiciency by passively steering inci-\ndent waves without dedicated radio-frequency chains [3, 4].\nAerial RIS deployment transforms the reflection point into\na controllable spatial variable, synthesizing reflected paths\nwhere direct links are blocked [5–7].\n∗Corresponding author. Email: arsheenaz@nitdelhi.ac.in\nCoordinating an aerial RIS swarm introduces tightly\ncoupled multi-objective tradeoffs.",
+    "start_idx": 3126,
+    "end_idx": 3723,
+    "chunk_index": 8
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c9",
+    "page_number": 3,
+    "text": "Email: arsheenaz@nitdelhi.ac.in\nCoordinating an aerial RIS swarm introduces tightly\ncoupled multi-objective tradeoffs. Each UAV must plan\nits 3D flight trajectory under rotary-wing propulsion lim-\nits [8], schedule downlink access for ground users, and ac-\ntivate cooperative aerial relaying when buildings obstruct\nits direct BS feeder link.\nConcurrently, co-channel RIS\nreflections generate spatial interference, batteries deplete\nasynchronously, and directional beams expose signals to\nterrestrial eavesdroppers [9].\nThese temporal couplings",
+    "start_idx": 3603,
+    "end_idx": 4149,
+    "chunk_index": 9
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c10",
+    "page_number": 3,
+    "text": "deplete\nasynchronously, and directional beams expose signals to\nterrestrial eavesdroppers [9].\nThese temporal couplings\nspan battery dynamics and evolving blockages, precluding\nper-slot optimization.\nWhile multi-agent reinforcement\nlearning (MARL) captures sequential decision processes\nthrough proximal policy optimization (MAPPO) [10, 11],\nindependent learners coordinate poorly, and centralized\ntraining requires uploading raw observations, incurring\nprohibitive communication overhead and compromising\nprivacy.",
+    "start_idx": 4029,
+    "end_idx": 4544,
+    "chunk_index": 10
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p3_c11",
+    "page_number": 3,
+    "text": "ed\ntraining requires uploading raw observations, incurring\nprohibitive communication overhead and compromising\nprivacy. Federated learning (FL) exchanges model param-\neters instead of raw data [12, 13], but conventional wireless\nPreprint submitted to Vehicular Communications\nOctober 8, 2026\nManuscript\nClick here to view linked References",
+    "start_idx": 4424,
+    "end_idx": 4763,
+    "chunk_index": 11
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c0",
+    "page_number": 4,
+    "text": "FL treats client participation as an idealized scheduling\ndecision [14–16].\nIn aerial swarms, physical constraints\nstrictly govern learning: each UAV funds propulsion and\ncomputation from a shared battery, and its uplink shares\nthe same urban blockage that impedes service, stranding\nmodels computed behind buildings.\nPrior studies investigate isolated aspects of this prob-\nlem:\nsingle-UAV RIS under deterministic blockage [7],\naerial-RIS physical-layer secrecy for static geometries [9,\n17], or channel-aware federated scheduling [14, 16, 18].",
+    "start_idx": 0,
+    "end_idx": 546,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c1",
+    "page_number": 4,
+    "text": "],\naerial-RIS physical-layer secrecy for static geometries [9,\n17], or channel-aware federated scheduling [14, 16, 18].\nHowever, existing literature lacks a decentralized frame-\nwork that jointly addresses building blockage, coherent\ninter-UAV interference, directional relaying, eavesdropper\nexposure, battery depletion, and emergent federated par-\nticipation.",
+    "start_idx": 426,
+    "end_idx": 788,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c2",
+    "page_number": 4,
+    "text": "V interference, directional relaying, eavesdropper\nexposure, battery depletion, and emergent federated par-\nticipation. We bridge this gap through Federated Multi-\nAgent Proximal Policy Optimization (FedMAPPO), where\na unified 3D geometric blockage model simultaneously dic-\ntates service feasibility, cooperative relaying, wiretap leak-\nage, and federated uplink access. The contributions are as\nfollows.\n1.",
+    "start_idx": 668,
+    "end_idx": 1077,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c3",
+    "page_number": 4,
+    "text": "feasibility, cooperative relaying, wiretap leak-\nage, and federated uplink access. The contributions are as\nfollows.\n1. Unified physics-grounded problem formulation: We\nformulate decentralized control of an RIS-assisted\nUAV swarm under 3D ray-box urban blockage,\nwhere a single geometric test governs service, di-\nrectional relaying, spatial interference, eavesdropper\nexposure, and federated uplink under rotary-wing\naerodynamics, extending single-agent models [7] to\ncooperative swarms.\n2.",
+    "start_idx": 957,
+    "end_idx": 1449,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c4",
+    "page_number": 4,
+    "text": "osure, and federated uplink under rotary-wing\naerodynamics, extending single-agent models [7] to\ncooperative swarms.\n2. Physics-gated federated multi-agent architecture:\nEach UAV autonomously trains an on-board actor-\ncritic policy to optimize 3D displacement and a\nservice bid resolved by capacity-constrained match-\ning. An explicit physical eligibility gate admits only\nUAVs with viable LoS uplinks and suﬀicient battery\nheadroom, while the framework supports FedAvg,\nFedProx, and resource-aware multi-metric aggrega-\ntion.\n3.",
+    "start_idx": 1329,
+    "end_idx": 1859,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c5",
+    "page_number": 4,
+    "text": "cient battery\nheadroom, while the framework supports FedAvg,\nFedProx, and resource-aware multi-metric aggrega-\ntion.\n3. Theoretical analysis and empirical validation: We\nderive closed-form eavesdropper Dirichlet array gains\nunder optimal RIS phase shifts. Across 3000-episode\nsimulations with 12 UAVs, 50 users, and two eaves-\ndroppers, paired tests with Holm–Bonferroni cor-\nrections demonstrate that FedMAPPO achieves\n7446 bit/J in energy eﬀiciency (113%–170% above\ncentralized baselines), while slashing unserved users\nfrom 13.9–20.0 to 1.75.\n2.",
+    "start_idx": 1739,
+    "end_idx": 2288,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c6",
+    "page_number": 4,
+    "text": "J in energy eﬀiciency (113%–170% above\ncentralized baselines), while slashing unserved users\nfrom 13.9–20.0 to 1.75.\n2. Related Work\nRIS-assisted UAV and vehicular communications. Be-\ncause cascaded channels incur product path loss, aerial\nand vehicular RIS deployments are advantageous near\nendpoints, motivating joint placement and beamform-\ning [5], coupled trajectory and phase design [6], multi-RIS\nvehicular connectivity restoration [19], UAV-mounted RIS\nenergy eﬀiciency optimization [20], multi-hop UAV-IRS\nemergency relaying [21], and dynamic multi-RIS vehic-",
+    "start_idx": 2168,
+    "end_idx": 2737,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c7",
+    "page_number": 4,
+    "text": "mounted RIS\nenergy eﬀiciency optimization [20], multi-hop UAV-IRS\nemergency relaying [21], and dynamic multi-RIS vehic-\nular network optimization [22].\nThese works establish\nreflected-path gains under offline or centralized optimiza-\ntion, without considering adaptive decentralized learning\nin dense swarms.\nRIS–UAV mobility and blockage.\nTrajectory opti-\nmization and coverage are coupled through propulsion\nenergy [8, 23, 24], motivating energy-aware cooperative\nmulti-UAV 3D path planning [25].\nStatistical elevation\nmodels [2] cannot resolve specific link obstruction in urban\ncanyons.",
+    "start_idx": 2617,
+    "end_idx": 3208,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c8",
+    "page_number": 4,
+    "text": "-UAV 3D path planning [25].\nStatistical elevation\nmodels [2] cannot resolve specific link obstruction in urban\ncanyons. Xie et al. [7] combined deterministic 3D block-\nage, rotary-wing dynamics, and a closed-form phase law\nfor a single UAV; our work extends deterministic block-\nage to multi-UAV swarms where reflections and shadows\ninteract.\nMulti-agent learning for UAV networks. Actor-critic\nbaselines include PPO with energy-optimized advantage\nestimation [10, 26], soft actor-critic (SAC) [27], and twin\ndelayed DDPG (TD3) [28].",
+    "start_idx": 3088,
+    "end_idx": 3622,
+    "chunk_index": 8
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c9",
+    "page_number": 4,
+    "text": "PO with energy-optimized advantage\nestimation [10, 26], soft actor-critic (SAC) [27], and twin\ndelayed DDPG (TD3) [28]. In cooperative swarms, cen-\ntralized training with decentralized execution (CTDE)\nschemes such as multi-agent DDPG (MADDPG) [29] and\nMAPPO [11] mitigate non-stationarity via centralized\ncritics, but pooling raw observations is communication-\nprohibitive and privacy-sensitive.\nIndependent PPO\n(IPPO) trains on local observations alone [11], but agents\ncannot share learned representations.\nFederated and resource-aware learning.\nFederated",
+    "start_idx": 3502,
+    "end_idx": 4061,
+    "chunk_index": 9
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c10",
+    "page_number": 4,
+    "text": "ervations alone [11], but agents\ncannot share learned representations.\nFederated and resource-aware learning.\nFederated\nlearning aggregates parameters without sharing raw data\n[12, 13]. Heterogeneity is handled via proximal terms [30]\nand control variates [31], while wireless FL schedules\nclients under resource limits [18, 32], including quantum\nfederated RL energy eﬀiciency optimization for IRS-UAV\nlinks [33], dynamic UAV FL [14, 15], and satellite-aerial\nrelays [16].\nHowever, these works treat channels as ex-\nogenous constraints rather than emergent outcomes of the",
+    "start_idx": 3941,
+    "end_idx": 4515,
+    "chunk_index": 10
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c11",
+    "page_number": 4,
+    "text": "aerial\nrelays [16].\nHowever, these works treat channels as ex-\nogenous constraints rather than emergent outcomes of the\nagents’ own spatial flight policies.\nPhysical-layer security in aerial communications. Wire-\ntap principles [34] have enhanced confidentiality via\nenergy-eﬀicient trajectory design in secure UAV-IRS sys-\ntems [35].",
+    "start_idx": 4395,
+    "end_idx": 4730,
+    "chunk_index": 11
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c12",
+    "page_number": 4,
+    "text": "p principles [34] have enhanced confidentiality via\nenergy-eﬀicient trajectory design in secure UAV-IRS sys-\ntems [35]. In aerial RIS setups, secrecy has been evaluated\nunder worst-case geometries [9], channel uncertainty [17],\nactive jamming and energy-eﬀicient aerial IRS orchestra-\ntion [36], and delayed policy optimization [37], assum-\ning fixed geometries rather than policies learned under\nnon-stationary interference.\nByzantine robustness [38–\n40] addresses active threats, whereas our focus is passive\nterrestrial eavesdropping.\nResearch gap and positioning.\nAs Table 1 demon-",
+    "start_idx": 4610,
+    "end_idx": 5196,
+    "chunk_index": 12
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c13",
+    "page_number": 4,
+    "text": "active threats, whereas our focus is passive\nterrestrial eavesdropping.\nResearch gap and positioning.\nAs Table 1 demon-\nstrates, recent studies actively investigate meaningful sub-\nsets of these elements: aerial RIS platforms have been com-\nbined with federated deep reinforcement learning in space-\naerial relays [16], with deterministic blockage and propul-\nsion dynamics for single UAVs [7], with physical-layer se-\ncrecy under optimization [9, 17], and with deep learning\nin vehicular networks [22].",
+    "start_idx": 5076,
+    "end_idx": 5580,
+    "chunk_index": 13
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p4_c14",
+    "page_number": 4,
+    "text": "UAVs [7], with physical-layer se-\ncrecy under optimization [9, 17], and with deep learning\nin vehicular networks [22]. Furthermore, multi-UAV feder-\nated learning has addressed client selection under wireless\nchannels [14]. However, what remains comparatively un-\n2",
+    "start_idx": 5460,
+    "end_idx": 5726,
+    "chunk_index": 14
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c0",
+    "page_number": 5,
+    "text": "Table 1: Comparison With Closely Related Work\nFeature\n[7]\n[16]\n[9]\n[14]\nOurs\nMobile UAV-carried RIS\n✓\n✓\n✓\n–\n✓\nMultiple UAVs\n–\n✓\n–\n✓\n✓\nDeterministic building blockage\n✓\n–\n–\n–\n✓\nCoherent inter-UAV interference\n–\n–\n–\n–\n✓\nAerial UAV-to-UAV relaying\n–\n✓\n–\n–\n✓\nFederated training\n–\n✓\n–\n✓\n✓\nBlockage- and battery-gated clients\n–\n–\n–\n–\n✓\nPassive eavesdroppers modelled\n–\n–\n✓\n–\n✓\nPropulsion energy and battery\n✓\n–\n–\n–\n✓\naddressed is the unified physical coupling where a single\ndeterministic 3D urban geometry simultaneously governs\nuser service feasibility, directional UAV-to-UAV relaying,",
+    "start_idx": 0,
+    "end_idx": 583,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c1",
+    "page_number": 5,
+    "text": "ingle\ndeterministic 3D urban geometry simultaneously governs\nuser service feasibility, directional UAV-to-UAV relaying,\ncoherent inter-UAV interference, passive-eavesdropper ex-\nposure, battery evolution, and federated round participa-\ntion, while autonomous UAV policies dynamically control\nthat geometry. Rather than proposing standalone PPO\nor aggregation heuristics, this work focuses specifically on\nthis multi-way physical coupling, providing a physically\nguided framework where blockage, energy, and flight deci-\nsions interactively guide swarm coordination.\n3.",
+    "start_idx": 463,
+    "end_idx": 1032,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c2",
+    "page_number": 5,
+    "text": "a physically\nguided framework where blockage, energy, and flight deci-\nsions interactively guide swarm coordination.\n3. System Model and Problem Formulation\nFig. 1 shows the setting: the direct BS–user path is\nusually obstructed, users are served through the reflec-\ntion of a UAV-mounted RIS, a UAV with a blocked feeder\nreaches the BS through a neighbour, the beam also reaches\npassive eavesdroppers, and the federated uplink shares the\nfeeder geometry.",
+    "start_idx": 912,
+    "end_idx": 1368,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c3",
+    "page_number": 5,
+    "text": "through a neighbour, the beam also reaches\npassive eavesdroppers, and the federated uplink shares the\nfeeder geometry. The service area is A = [0, X] × [0, Y]\nwith altitudes in [Zmin, Zmax], U, K, E index the U UAVs,\nK users and E eavesdroppers, time is slotted as t = 1, . . . , T\nwith duration td, the BS is at b, UAV u carries an RIS at\nqu(t) and eavesdroppers are static at ve. UAV u chooses\na displacement ∆u(t) with ∥∆u(t)∥2 ≤Dmax and moves to\nqu(t + 1) = Π(qu(t) + ∆u(t)), with Π(·) projecting onto A ×\n[Zmin, Zmax] and a displacement leaving the region recorded\nas out of bounds.",
+    "start_idx": 1248,
+    "end_idx": 1837,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c4",
+    "page_number": 5,
+    "text": ") + ∆u(t)), with Π(·) projecting onto A ×\n[Zmin, Zmax] and a displacement leaving the region recorded\nas out of bounds. Users walk on the roads with Manhat-\ntan routing, partly clustered, each with a demand weight\nϱk ∈{0.5, 1, 2}.\n3.1. Blockage, Surface Orientation and Channel\nBuildings are axis-aligned boxes {Bn}Nb\nn=1, and the LoS\nindicator of two points is\nℓ(p, p′) =\n\n1,\n[p, p′] ∩Bn = ∅, ∀n,\n0,\notherwise,\n(1)\nevaluated with the slab method for each link class: BS–\nUAV, UAV–user, BS–user, UAV–UAV, UAV–eavesdropper\nand BS–eavesdropper.",
+    "start_idx": 1717,
+    "end_idx": 2267,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c5",
+    "page_number": 5,
+    "text": "ed with the slab method for each link class: BS–\nUAV, UAV–user, BS–user, UAV–UAV, UAV–eavesdropper\nand BS–eavesdropper. This deterministic indicator, from\n[7], replaces an elevation-dependent LoS probability [2] be-\ncause each UAV must know which specific link is blocked,\nand a blocked link carries no usable power: the large-scale\ngain of a link of length d ≥1 m is ¯a2(d, ℓ) = ℓ· 10−PL(d)/10\nwith PL(d) = β0 + 10nL log10 d.\nEach RIS is a uniform planar array of M = Mr × Mc el-\nements with half-wavelength spacing, mounted flat on the\nunderside of its UAV.",
+    "start_idx": 2147,
+    "end_idx": 2707,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c6",
+    "page_number": 5,
+    "text": "uniform planar array of M = Mr × Mc el-\nements with half-wavelength spacing, mounted flat on the\nunderside of its UAV. Writing the azimuth and elevation\nof a point seen from the surface as φ and ψ, the array\ncolumns lie along x and its rows along y, so the steering\nvector has entries\n[a(φ, ψ)]mr,mc = exp\u0000ȷπ(mc cos φ cos ψ + mr sin φ cos ψ)\u0001, (2)\nfor mr = 0, . . . , Mr −1 and mc = 0, . . . , Mc −1.",
+    "start_idx": 2587,
+    "end_idx": 2989,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c7",
+    "page_number": 5,
+    "text": "ies\n[a(φ, ψ)]mr,mc = exp\u0000ȷπ(mc cos φ cos ψ + mr sin φ cos ψ)\u0001, (2)\nfor mr = 0, . . . , Mr −1 and mc = 0, . . . , Mc −1. A downward-\nfacing surface reflects only into the half-space below it, so a\nreflected link between a source p and a receiver p′ through\nRIS u exists only when both lie below the platform,\nχu(p) = ⊮{[p]3 < [qu]3},\nχu(p) χu(p′) = 1.\n(3)\nSince the BS, the users and the eavesdroppers lie below the\naltitude band, (3) binds only between UAVs and makes\nrelaying directional: a helper may feed the surface of a\nUAV flying above it, not below it.",
+    "start_idx": 2869,
+    "end_idx": 3429,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c8",
+    "page_number": 5,
+    "text": "only between UAVs and makes\nrelaying directional: a helper may feed the surface of a\nUAV flying above it, not below it. An LoS link follows\nRician fading with factor κ,\nh = ¯a\n\u0012 q\nκ\n1+κ a +\nq\n1\n1+κ ˜h\n\u0013\n,\n˜h ∼CN(0, IM),\n(4)\nand scalar links use the same model with M = 1. Let gu\nbe the channel from the active source (the BS, or a helper\nUAV) to RIS u, and hu,k, hu,e those from RIS u to user\nk and eavesdropper e; with Θu = diag(e ȷθu,1, . . . , e ȷθu,M) the\ncascaded gain toward user k is |gT\nuΘuhu,k|2.",
+    "start_idx": 3309,
+    "end_idx": 3815,
+    "chunk_index": 8
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c9",
+    "page_number": 5,
+    "text": "o user\nk and eavesdropper e; with Θu = diag(e ȷθu,1, . . . , e ȷθu,M) the\ncascaded gain toward user k is |gT\nuΘuhu,k|2. The phases are\nnot learned but follow the closed-form law of [7],\nθu,m = −\u0000 arg[as\nu]m + arg[au,k]m\n\u0001,\n(5)\nwith as\nu the steering vector toward the source and au,k\nthat toward the served user, recomputed per user in its\ntime-division slot; it co-phases the LoS components, so\n|(as\nu)TΘuau,k| = M.\n3.2. Service Modes, Interference, Secrecy and Energy\nUsers are served in one of three modes.",
+    "start_idx": 3695,
+    "end_idx": 4205,
+    "chunk_index": 9
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c10",
+    "page_number": 5,
+    "text": "s, so\n|(as\nu)TΘuau,k| = M.\n3.2. Service Modes, Interference, Secrecy and Energy\nUsers are served in one of three modes. In direct mode,\nif ℓ(b, wk) = 1, the BS serves user k at B log2(1 + PB|fb,k|2/\n(Bσ2)), with B the bandwidth and σ2 the noise power spec-\ntral density. In reflected mode, with an LoS feeder link,\nthe BS transmits with PB and RIS u reflects toward user\nk with\nγu,k = PB |gT\nuΘuhu,k|2\nIu,k + Bσ2\n.\n(6)\nThe interference Iu,k collects the reflections of the other\nserving UAVs.",
+    "start_idx": 4085,
+    "end_idx": 4578,
+    "chunk_index": 10
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p5_c11",
+    "page_number": 5,
+    "text": "with\nγu,k = PB |gT\nuΘuhu,k|2\nIu,k + Bσ2\n.\n(6)\nThe interference Iu,k collects the reflections of the other\nserving UAVs. Because each of them steers by (5) toward\nits own served user, its phases are not independent of the\ndirection of user k, and the mean of the cascaded power\nover the fading of (4) is\nIu,k =\nX\nv∈S\\{u}\nPv ¯a2\nv ¯a2\nv,k\nh\nc4 Gv,k + (1 −c4) M\ni\n,\n(7)\n3",
+    "start_idx": 4458,
+    "end_idx": 4826,
+    "chunk_index": 11
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c0",
+    "page_number": 6,
+    "text": "BS\nUser 1\nUser 2\nUser k\nUser K\nEve e\nUAV u\nUAV v\nhelper UAV j\nUAV U\ntrajectory qu(t)\nfeeder gu\nreflected gT\nUΘUhU,K\nleakage hv,e\nDF relay 1\n2 min(R1, R2)\nFL uplink: θu,\n(Nu, ¯Bu, Qu, ˆCu)\nRIS on each UAV\nM = Mr × Mc elements\nBS→UAV feeder\nreflected service link\nUAV→UAV DF relay\nleakage to eavesdropper\nfederated uplink\nblocked path\nbuilding blockage\nUAV trajectory\nFigure 1: System model: RIS-carrying UAVs serve users behind buildings, a UAV with a blocked feeder is relayed by a neighbour flying below",
+    "start_idx": 0,
+    "end_idx": 505,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c1",
+    "page_number": 6,
+    "text": "del: RIS-carrying UAVs serve users behind buildings, a UAV with a blocked feeder is relayed by a neighbour flying below\nit, reflections also reach passive eavesdroppers, and the federated uplink shares the feeder geometry.\nwhere S is the set of serving UAVs, Pv and ¯a2\nv are the\ntransmit power and feeder gain of the source of UAV v,\n¯a2\nv,k = ¯a2(∥qv −wk∥, ℓ(qv, wk)), c2 = κ/(1 + κ), and\nGv,k =\nX\ns∈Kv\nτv,s\naH\nv,sav,k\n2\n(8)\nis the array gain that the beams of UAV v place on user k,\naveraged over its time-division schedule τv,s.",
+    "start_idx": 385,
+    "end_idx": 918,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c2",
+    "page_number": 6,
+    "text": "v,sav,k\n2\n(8)\nis the array gain that the beams of UAV v place on user k,\naveraged over its time-division schedule τv,s. The incoher-\nent approximation Iu,k = P\nv PvM¯a2\nv ¯a2\nv,k, obtained by setting\nGv,k = M, underestimates (7) whenever user k lies near a\nbeam of UAV v: on a replayed episode of a trained policy\nit was a median factor of 7.7 too small and overstated the\nsignal-to-interference-and-noise ratio of served users by a\nmedian of 8.5 dB, which is why the exact mean is used\nthroughout.\nIn relayed mode, if ℓ(b, qu) = 0, a helper UAV j with",
+    "start_idx": 798,
+    "end_idx": 1351,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c3",
+    "page_number": 6,
+    "text": "median of 8.5 dB, which is why the exact mean is used\nthroughout.\nIn relayed mode, if ℓ(b, qu) = 0, a helper UAV j with\nℓ(b, q j) = ℓ(qj, qu) = 1, χu(qj) = 1 and battery above a re-\nlay gate decodes and retransmits with Pr through RIS u;\nit maximizes the large-scale estimate of min(R1, R2), sup-\nports one UAV, spends td\n2 (Pr+Prx) per slot, and half-duplex\ndecode-and-forward gives\n1\n2 min(R1, R2), with R1 the BS–\nhelper rate and R2 = B log2(1 + γu,k) evaluated with Pr and\nthe helper–RIS channel, so relay selection is deterministic\nand not learned.",
+    "start_idx": 1231,
+    "end_idx": 1785,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c4",
+    "page_number": 6,
+    "text": "2 = B log2(1 + γu,k) evaluated with Pr and\nthe helper–RIS channel, so relay selection is deterministic\nand not learned. The users of UAV u, Ku = {k : αk,u =\n1}, share the slot by demand weight, τu,k = ϱk/ P\nk′∈Ku ϱk′,\nso Rk = τu,kRmode\nu,k , a user with Rk = 0 is unserved, and\nP\nu αk,u ≤1, |Ku| ≤Kcap. An eavesdropper in LoS of RIS\nu overhears the reflection intended for user k, with phases\nmatched to k, at\nRk,e = τu,k ζ B log2",
+    "start_idx": 1665,
+    "end_idx": 2097,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c5",
+    "page_number": 6,
+    "text": "ropper in LoS of RIS\nu overhears the reflection intended for user k, with phases\nmatched to k, at\nRk,e = τu,k ζ B log2\n\n1 + Ps|gT\nuΘuhu,e|2\nBσ2\n!\n,\n(9)\nwith Ps the source power and ζ = 1 in reflected, 1\n2 in re-\nlayed mode; no interference is counted at the eavesdrop-\nper, which favours it, a direct-mode user is overheard by\nevery eavesdropper with LoS to the BS, and relay hops\nare not overheard. Following [9] the secrecy rate is Rsec\nk\n=\n[Rk −maxe Rk,e]+, and the secrecy outage probability is the\nfraction of served users with Rsec\nk\n< Rth.",
+    "start_idx": 1977,
+    "end_idx": 2524,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c6",
+    "page_number": 6,
+    "text": "ate is Rsec\nk\n=\n[Rk −maxe Rk,e]+, and the secrecy outage probability is the\nfraction of served users with Rsec\nk\n< Rth. Eavesdropper co-\nordinates are not observed by the UAVs and do not en-\nter their local policy observations; instead, they are main-\ntained by the environment to evaluate physical leakage\nin (9) and by the network controller to compute the can-\ndidate leakage estimate for centralized association match-\ning.",
+    "start_idx": 2404,
+    "end_idx": 2832,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c7",
+    "page_number": 6,
+    "text": "n (9) and by the network controller to compute the can-\ndidate leakage estimate for centralized association match-\ning. Propulsion follows the rotary-wing model [8] as used\nin [7]: for vh = ∥[∆u]1:2∥/td and vv = |[∆u]3|/td, constant over\nthe slot,\nP(vh, vv) = Pb\n\u0010\n1 +\n3v2\nh\nU2\ntip\n\u0011\n+ 1\n2d0ρsGv3\nh\n+ Pi\n\u0010 r\n1 +\nv4\nh\n4v4\n0 −\nv2\nh\n2v2\n0\n\u00111/2 + mug vv,\n(10)\nso a descent is charged the power of a climb at the same\nspeed.",
+    "start_idx": 2712,
+    "end_idx": 3132,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c8",
+    "page_number": 6,
+    "text": "Pi\n\u0010 r\n1 +\nv4\nh\n4v4\n0 −\nv2\nh\n2v2\n0\n\u00111/2 + mug vv,\n(10)\nso a descent is charged the power of a climb at the same\nspeed. The slot energy is Eu(t) = P(vh, vv)td + Ecom\nu\n(t) with\nEcom\nu\nthe relay energy, the battery evolves as Bu(t + 1) =\nmax(0, Bu(t) −Eu(t)), and a UAV reaching the reserve Bmin\nlands for the episode. Federated rounds also consume Ecmp\nat every UAV and Eup\nu = S θPup/ ˆCu at each participant, with\nS θ the model size in bits and ˆCu the uplink rate of (21);\nboth are drained at the round boundary and are not part\nof Eu(t).\n3.3.",
+    "start_idx": 3012,
+    "end_idx": 3559,
+    "chunk_index": 8
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p6_c9",
+    "page_number": 6,
+    "text": "el size in bits and ˆCu the uplink rate of (21);\nboth are drained at the round boundary and are not part\nof Eu(t).\n3.3. Objective and Decision Process\nFollowing [7], rate, fairness and energy are combined\ninto the per-slot fairness-weighted energy eﬀiciency\nF(t) = J(t) td\nP\nk∈K Rk(t)\nP\nu∈U Eu(t)\n(bit/J),\n(11)\nwith J(t) = (P\nk Rk)2/(K P\nk R2\nk) Jain’s index [41], which pre-\nvents the fleet from concentrating rate on the users cheap-\nest to reach. The decision variables are the displacements\n4",
+    "start_idx": 3439,
+    "end_idx": 3935,
+    "chunk_index": 9
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c0",
+    "page_number": 7,
+    "text": "∆u(t) and bids bu(t), while αk,u(t) follows from the bids, the\nhelpers from the rule above and the phases from (5):\n(P1)\nmax\n{∆u(t), bu(t)}\nE\nh 1\nT\nPT\nt=1 F(t)\ni\ns.t.\n(C1) ∥∆u(t)∥2 ≤Dmax,\n(C2) P\nu αk,u ≤1, |Ku| ≤Kcap,\n(C3) relay feasibility, (3),\n(C4) Bu(t) > Bmin for active UAVs.\n(12)\nIn (P1), constraints (C1)–(C4) specify physical and op-\nerational feasibility: per-slot displacement (C1), single-\nassociation and per-UAV capacity (C2), geometric relay\nviability (C3), and battery reserve preservation for ac-\ntive platforms (C4).",
+    "start_idx": 0,
+    "end_idx": 535,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c1",
+    "page_number": 7,
+    "text": "nd per-UAV capacity (C2), geometric relay\nviability (C3), and battery reserve preservation for ac-\ntive platforms (C4). Specifically, (C3) requires a helper\nwith LoS to the BS and to the relayed UAV, flying be-\nlow it, with a battery above the relay gate and no other\nrelayed UAV. Rather than independently optimizing ev-\nery network variable, the direct decision variables of each\nplatform are its displacement ∆u(t) and service bid bu(t);\nthe association variables αk,u(t) are generated by the deter-\nministic constrained matching rule, relay helpers by the",
+    "start_idx": 415,
+    "end_idx": 975,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c2",
+    "page_number": 7,
+    "text": "the association variables αk,u(t) are generated by the deter-\nministic constrained matching rule, relay helpers by the\ndeterministic relay-selection rule, and RIS phase shifts by\nthe closed-form phase law (5). In addition, federated par-\nticipation is governed by the physical eligibility gate (20),\nwhile raw sensor observations and local trajectories remain\nstrictly on board each UAV by architectural design. Se-\ncrecy enters through the association utility and reward,\nand the expectation is over mobility, fading and eavesdrop-\nper placement.",
+    "start_idx": 855,
+    "end_idx": 1404,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c3",
+    "page_number": 7,
+    "text": "through the association utility and reward,\nand the expectation is over mobility, fading and eavesdrop-\nper placement. Even without federation, the problem cou-\nples nonconvex geometric blockage, trajectory-dependent\nrates, association and battery dynamics over the mission\nhorizon, making direct joint optimization diﬀicult.\nBe-\ncause decentralized execution and information-privacy re-\nquirements preclude any centralized controller with ac-\ncess to all observations, the problem is cast as a decen-\ntralized partially observable Markov decision process [42]",
+    "start_idx": 1284,
+    "end_idx": 1846,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c4",
+    "page_number": 7,
+    "text": "c-\ncess to all observations, the problem is cast as a decen-\ntralized partially observable Markov decision process [42]\nwith agents U, observations ou(t), actions au(t), rewards\nru(t) and discount γ.\nThe observation ou(t) ∈R45 holds\nonly local or broadcast quantities: the normalized posi-\ntion, battery fraction, feeder-LoS and relay flags of UAV\nu, its previous action and slot index, the relative position,\ndemand weight and LoS flag of the five nearest users, the\nrelative position and battery fraction of the two nearest\nUAVs, obtained by beaconing, and a six-dimensional BS",
+    "start_idx": 1726,
+    "end_idx": 2306,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c5",
+    "page_number": 7,
+    "text": "rs, the\nrelative position and battery fraction of the two nearest\nUAVs, obtained by beaconing, and a six-dimensional BS\nbroadcast holding the mean and minimum battery frac-\ntions, the fraction of active UAVs, and the Jain index, sum\nrate and fleet energy of the previous slot, standardized by\nrunning estimates [43] updated only during training.",
+    "start_idx": 2186,
+    "end_idx": 2532,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c6",
+    "page_number": 7,
+    "text": "x, sum\nrate and fleet energy of the previous slot, standardized by\nrunning estimates [43] updated only during training. Cru-\ncially, eavesdropper coordinates are excluded from ou(t)\nand are never observed by the UAV actor or critic; can-\ndidate leakage estimation is performed externally during\nassociation matching, so eavesdropper coordinates never\nenter the UAV policy or leave the UAV as part of its train-\ning observation.",
+    "start_idx": 2412,
+    "end_idx": 2840,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c7",
+    "page_number": 7,
+    "text": "atching, so eavesdropper coordinates never\nenter the UAV policy or leave the UAV as part of its train-\ning observation. The action au(t) ∈[−1, 1]4 is sampled from\na Gaussian policy and clipped, giving ∆u = Dmaxau,1:3 and\nthe bid bu = 0.525 + 0.475 au,4 ∈[0.05, 1], and the reward is\nru(t) = λFF(t) + λS\n¯Rsec(t)\nS ref\n+ λloc\nP\nk∈Ku Rk(t)\nRref\n+ λS\nP\nk∈Ku Rsec\nk (t)\nS ref\n−po ⊮oob\nu (t),\n(13)\nwith ¯Rsec the mean secrecy rate over served users and ⊮oob\nu\nan out-of-bounds displacement; the local terms reduce the\nambiguity of a purely shared reward and the secrecy terms",
+    "start_idx": 2720,
+    "end_idx": 3291,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c8",
+    "page_number": 7,
+    "text": "b\nu\nan out-of-bounds displacement; the local terms reduce the\nambiguity of a purely shared reward and the secrecy terms\npenalize leaking trajectories. The same coeﬀicient λS in-\ntentionally weights both the global fleet mean-secrecy term\nand the local per-UAV secrecy contribution to align indi-\nvidual flight trajectories with collective network security.\nEach UAV receives only this scalar reward ru(t) computed\nby the environment; it never observes the raw eavesdrop-\nper coordinates directly.\n4. The Proposed FedMAPPO Framework\nFig. 2 shows the workflow.",
+    "start_idx": 3171,
+    "end_idx": 3730,
+    "chunk_index": 8
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c9",
+    "page_number": 7,
+    "text": "ver observes the raw eavesdrop-\nper coordinates directly.\n4. The Proposed FedMAPPO Framework\nFig. 2 shows the workflow. Per slot, each UAV forms\nou(t), its actor samples a displacement and a bid, the UAVs\nmove, (1) sets service modes and helpers, bids are matched\nto users, phases follow (5), and rates, secrecy, energy and\nbatteries are evaluated, every active UAV storing its tran-\nsition and reward (13) on board.",
+    "start_idx": 3610,
+    "end_idx": 4027,
+    "chunk_index": 9
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c10",
+    "page_number": 7,
+    "text": "rates, secrecy, energy and\nbatteries are evaluated, every active UAV storing its tran-\nsition and reward (13) on board. Every Tﬂslots all models\nare updated locally, the gate admits UAVs, the admitted\nmodels are aggregated, and the global model returns to the\nparticipants as parameters and proximal anchor, while the\nothers continue from their local parameters.\n4.1.",
+    "start_idx": 3907,
+    "end_idx": 4275,
+    "chunk_index": 10
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c11",
+    "page_number": 7,
+    "text": "urns to the\nparticipants as parameters and proximal anchor, while the\nothers continue from their local parameters.\n4.1. Learned Bid-Based Association\nA per-UAV action over all users would be combinato-\nrial, so each UAV emits the scalar bid bu and association\nis solved per slot by constrained greedy matching on a\nlearned pairwise utility:\nJu,k = bu ϱk ˆRsec\nu,k,\n(14)\nwhere bu ∈[0.05, 1] is the learned bid, ϱk is the nor-\nmalized user demand weight, and ˆRsec\nu,k is a deterministic,\nlarge-scale, interference-free secrecy-rate surrogate eval-\nuated per candidate pair (u, k).",
+    "start_idx": 4155,
+    "end_idx": 4735,
+    "chunk_index": 11
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c12",
+    "page_number": 7,
+    "text": "ec\nu,k is a deterministic,\nlarge-scale, interference-free secrecy-rate surrogate eval-\nuated per candidate pair (u, k).\nThis surrogate rates\neach candidate link in isolation using large-scale channel\ngains without small-scale fading or the cross-UAV inter-\nference term (7), providing a lightweight ranking metric\nfor matching.\nFor an active UAV u with a valid feeder path and LoS\nto user k (ℓ(qu, wk) = 1), with direct-mode users excluded\n(ℓ(b, wk) = 0), the estimated legitimate rate under the co-\nherent RIS phase law (5) is\nRLS\nu,k =\n\nB log2\n1 +\nPB M2 ¯a2\nb,u ¯a2\nu,k\nBσ2",
+    "start_idx": 4615,
+    "end_idx": 5211,
+    "chunk_index": 12
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p7_c13",
+    "page_number": 7,
+    "text": "mate rate under the co-\nherent RIS phase law (5) is\nRLS\nu,k =\n\nB log2\n1 +\nPB M2 ¯a2\nb,u ¯a2\nu,k\nBσ2\n,\nif ℓ(b, qu) = 1,\n1\n2 min\u0000RLS\n1, j, RLS\n2,u,k\n\u0001,\nif relayed via j,\n(15)\nwhere ¯a2\nb,u = ¯a2(∥b −qu∥, 1), ¯a2\nu,k = ¯a2(∥qu −wk∥, 1), and\nfor a helper UAV j selected by the deterministic relay\n5",
+    "start_idx": 5091,
+    "end_idx": 5412,
+    "chunk_index": 13
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c0",
+    "page_number": 8,
+    "text": "Every slot t (on board and in the environment: Stages 1–7)\nUrban environment:\nbuildings, BS b, users\nwk(t), RIS-carrying UAVs\nqu(t), eavesdroppers ve\nLocal observation ou(t):\nposition, battery Bu,\nfeeder-LoS ℓ(b, qu),\nrelay flags, nearest\nusers, BS summary\nLocal actor πθu and\ncritic Vθu: sample\ndisplacement ∆u(t)\nand bid bu(t) ∈[0.05, 1]\nOn-board rollout buffer\n(ou, au, ru); stored lo-\ncally for slot t + 1\nLocal evaluation: en-\nergy and battery (10),\nreward ru(t) (13), net-\nwork EE F(t) (11)\nUAV and user\nmobility; 3D ray-\nbox blockage test\n(1) on all links\nService mode;\nhalf-space test",
+    "start_idx": 0,
+    "end_idx": 593,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c1",
+    "page_number": 8,
+    "text": "net-\nwork EE F(t) (11)\nUAV and user\nmobility; 3D ray-\nbox blockage test\n(1) on all links\nService mode;\nhalf-space test\n(3), relay helper\nfor blocked UAVs\nLearned utility\nJu,k (14); greedy\nmatching, |Ku| ≤Kcap\nCoherent phase law\n(5); rates (6), inter-\nference, secrecy (9)\nJoint communication\nand control decisions\n∆u(t), bu(t)\nEvery Tﬂslots (federated round ρ: Stages 8–13)\nLocal PPO update on\nbuffer with proximal\nterm (19); drains com-\nputation energy Ecmp\nPhysical participa-\ntion gate (20): active,\nbattery ¯Bu > Bth, up-\nlink rate ˆCu > Cth (21)\nAdmitted UAVs u ∈\nP(ρ) upload θu and",
+    "start_idx": 473,
+    "end_idx": 1062,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c2",
+    "page_number": 8,
+    "text": "participa-\ntion gate (20): active,\nbattery ¯Bu > Bth, up-\nlink rate ˆCu > Cth (21)\nAdmitted UAVs u ∈\nP(ρ) upload θu and\n(Nu, ¯Bu, Qu, ˆCu); drain Eup\nu\nRule 1:\nFedMAPPO-RA\nresource-aware\nweights (22), (23)\nRule 2: FedProx\nsample-volume\nweights [30]:\nwu ∝Nu, µ > 0\nRule 3: FedAvg\nuniform\nweights [12]:\nwu =\n1\n|P| , µ = 0\nor\nor\nWeighted global aggregation: θg = P\nu∈P(ρ) wuθu\nGlobal model redistribu-\ntion to participants only:\nθu ←θg, anchor θg\nu ←θg\nNext round; after Nep\nepisodes, determin-\nistic evaluation on\nbenchmark episode\nP\nnext slots\nt mod Tﬂ= 0",
+    "start_idx": 942,
+    "end_idx": 1497,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c3",
+    "page_number": 8,
+    "text": "nchor θg\nu ←θg\nNext round; after Nep\nepisodes, determin-\nistic evaluation on\nbenchmark episode\nP\nnext slots\nt mod Tﬂ= 0\nConfigurable aggregation module (Stage 11: 3 interchangeable rules)\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\nper-slot data and control\nmodel parameters\nThe three aggregation rules (FedMAPPO-RA, FedProx, FedAvg) are interchangeable set-\ntings of Module 11. All share the identical physical blockage model, gate (20), bid asso-\nciation, and local PPO updates. Non-participants keep local policies without regression;\nraw observations never leave any UAV.\nFigure 2: Workflow of FedMAPPO.",
+    "start_idx": 1377,
+    "end_idx": 1971,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c4",
+    "page_number": 8,
+    "text": "ticipants keep local policies without regression;\nraw observations never leave any UAV.\nFigure 2: Workflow of FedMAPPO. The slot loop (stages 1–7) runs on board and in the environment; the federated round (stages 8–13) runs\nevery Tﬂslots. The battery and feeder LoS produced in stage 2 decide admission in stage 9, and the aggregation step (stage 11) offers three\ninterchangeable rules.\nrule, RLS\n1, j = B log2(1 + PB ¯a2(∥b −q j∥, 1)/(Bσ2)) and RLS\n2,u,k =\nB log2(1 + Pr M2 ¯a2(∥q j −qu∥, 1) ¯a2\nu,k/(Bσ2)).\nIf UAV u is\ninactive, has no feeder LoS and no viable helper, or if",
+    "start_idx": 1851,
+    "end_idx": 2428,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c5",
+    "page_number": 8,
+    "text": "B log2(1 + Pr M2 ¯a2(∥q j −qu∥, 1) ¯a2\nu,k/(Bσ2)).\nIf UAV u is\ninactive, has no feeder LoS and no viable helper, or if\nℓ(qu, wk) = 0, or user k is served in direct mode, ˆRsec\nu,k = 0.\nCandidate pairs are eavesdropper-aware in that the\ncentralized matching procedure discounts candidate links\nthat expose transmissions to strong eavesdropper leakage.\nEavesdropper coordinates are not inputs to any UAV actor\nor critic; instead, they are used exclusively by the network\ncontroller to compute the pairwise leakage surrogate.",
+    "start_idx": 2308,
+    "end_idx": 2832,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c6",
+    "page_number": 8,
+    "text": "ctor\nor critic; instead, they are used exclusively by the network\ncontroller to compute the pairwise leakage surrogate. An\neavesdropper e in LoS of RIS u (ℓ(qu, ve) = 1) overhears\nthe reflection with directional array gain Gu,k,e = |aH\nu,kau,e|2\ngiven by Proposition 1, yielding the estimated leakage rate\nˆReve\nu,k,e = ζ B log2\n1 + Ps Gu,k,e ¯a2\ns,u ¯a2\nu,e\nBσ2\n,\n(16)\nwith Ps and ¯a2\ns,u the transmit power and path gain of the\nactive source (BS in reflected mode with ζ = 1; helper j\nwith Pr and ζ = 1\n2 in relayed mode), and ¯a2\nu,e = ¯a2(∥qu −\nve∥, 1).",
+    "start_idx": 2712,
+    "end_idx": 3282,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c7",
+    "page_number": 8,
+    "text": "ource (BS in reflected mode with ζ = 1; helper j\nwith Pr and ζ = 1\n2 in relayed mode), and ¯a2\nu,e = ¯a2(∥qu −\nve∥, 1). The strongest eligible LoS eavesdropper maximizes\nthis leakage estimate:\ne⋆(u, k) = arg\nmax\ne: ℓ(qu,ve)=1\nˆReve\nu,k,e,\n(17)\ngiving ˆReve\nu,k = ˆReve\nu,k,e⋆(with ˆReve\nu,k = 0 if no eavesdropper has\nLoS to RIS u).\nThe net surrogate secrecy rate is then\nfloored at 5% of the legitimate estimated rate to prevent\nleakage penalties from completely disabling candidate as-\nsociations:\nˆRsec\nu,k = max\nn\nRLS\nu,k −ˆReve\nu,k , 0.05 RLS\nu,k\no\n.\n(18)",
+    "start_idx": 3162,
+    "end_idx": 3723,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c8",
+    "page_number": 8,
+    "text": "alties from completely disabling candidate as-\nsociations:\nˆRsec\nu,k = max\nn\nRLS\nu,k −ˆReve\nu,k , 0.05 RLS\nu,k\no\n.\n(18)\nMatching proceeds deterministically: all eligible pairs\n(u, k) with ˆRsec\nu,k > 0 are evaluated by (14) and sorted in\ndescending order of Ju,k. A candidate pair is greedily ac-\ncepted if user k is currently unassigned and UAV u serves\nfewer than Kcap users, guaranteeing constraint (C2).",
+    "start_idx": 3603,
+    "end_idx": 4011,
+    "chunk_index": 8
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c9",
+    "page_number": 8,
+    "text": "dily ac-\ncepted if user k is currently unassigned and UAV u serves\nfewer than Kcap users, guaranteeing constraint (C2). Cru-\ncially, this large-scale pairwise surrogate rates each can-\ndidate pair in isolation without modeling the cross-UAV\ninterference from (7) that active reflections induce on other\nserved users, a deliberate design choice for computational\ntractability whose consequence is quantified in Section 6.\n4.2.",
+    "start_idx": 3891,
+    "end_idx": 4317,
+    "chunk_index": 9
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c10",
+    "page_number": 8,
+    "text": "ved users, a deliberate design choice for computational\ntractability whose consequence is quantified in Section 6.\n4.2. Local Multi-Agent Policy Optimization\nThe actor πθu and critic Vθu of UAV u are two-layer\nperceptrons with 128 hidden units and θu collects both.\nThe critic sees the same observation as the actor, so no\nraw observation of another UAV is used in training and\nthe critic is strictly decentralized.",
+    "start_idx": 4197,
+    "end_idx": 4613,
+    "chunk_index": 10
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c11",
+    "page_number": 8,
+    "text": "vation as the actor, so no\nraw observation of another UAV is used in training and\nthe critic is strictly decentralized. Unlike the conventional\ncentralized-critic MAPPO formulation, each UAV in our\nimplementation uses a local critic based only on its own\nobservation; we denote the resulting federated decentral-\nized PPO framework as FedMAPPO throughout this pa-\nper. At every round boundary each UAV runs PPO on\nthe transitions it stored while active, with generalized ad-\nvantage estimates [10, 26] bootstrapped from the critic,\nminimizing\nLu(θu) = −Lclip\nu\n+ cvLV\nu −ceH[πθu] + µ\n2\n\nθu −θg\nu",
+    "start_idx": 4493,
+    "end_idx": 5090,
+    "chunk_index": 11
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c12",
+    "page_number": 8,
+    "text": "ntage estimates [10, 26] bootstrapped from the critic,\nminimizing\nLu(θu) = −Lclip\nu\n+ cvLV\nu −ceH[πθu] + µ\n2\n\nθu −θg\nu\n\n2\n2,\n(19)\nwith Lclip\nu\nthe clipped surrogate of [10] with ratio clip ϵc,\nLV\nu the squared value error, H the entropy and θg\nu the\nlast global model received. The actor is Gaussian with a\nstate-independent log standard deviation, advantages are\nstandardized per update, gradients clipped to norm 0.5,\nand each UAV keeps its own Adam state, not reset on\nreceiving a global model, and its own observation statis-\ntics, which are not uploaded.",
+    "start_idx": 4970,
+    "end_idx": 5530,
+    "chunk_index": 12
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p8_c13",
+    "page_number": 8,
+    "text": "ts own Adam state, not reset on\nreceiving a global model, and its own observation statis-\ntics, which are not uploaded. The proximal term is that\nof FedProx [30] and is used in both configurations.\n6",
+    "start_idx": 5410,
+    "end_idx": 5609,
+    "chunk_index": 13
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c0",
+    "page_number": 9,
+    "text": "4.3. Physically Gated Participation\nAt round ρ, UAV u is admitted iff\n⊮{u active} ∧\u0000 ¯Bu > Bth\n\u0001 ∧\u0000 ˆCu > Cth\n\u0001,\n(20)\nwith ¯Bu = Bu/Bmax and large-scale uplink rate\nˆCu = B log2\n\u0010\n1 + Pup ¯a2(∥b −qu∥, ℓ(b, qu))\nBσ2\n\u0011\n,\n(21)\ngiving the admitted set P(ρ). A blocked feeder link gives\nˆCu = 0 and excludes the UAV by propagation, exactly as its\nreflected service is excluded, so participation is decided by\nwhere the swarm has flown; the battery condition excludes\nUAVs close to their reserve, whose policies are about to\nstop acting.\n4.4.",
+    "start_idx": 0,
+    "end_idx": 537,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c1",
+    "page_number": 9,
+    "text": "rm has flown; the battery condition excludes\nUAVs close to their reserve, whose policies are about to\nstop acting.\n4.4. Configurable Aggregation\nAdmitted models are combined as θg = P\nu∈P(ρ) wuθu.\nEach participant reports the data volume Nu (transitions\nsince the last round), the battery fraction ¯Bu, the learning\nquality Qu (an exponential moving average of its reward\nwith factor 0.05) and the uplink rate ˆCu.",
+    "start_idx": 417,
+    "end_idx": 832,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c2",
+    "page_number": 9,
+    "text": "on ¯Bu, the learning\nquality Qu (an exponential moving average of its reward\nwith factor 0.05) and the uplink rate ˆCu. In configuration\nA each factor x ∈{N, ¯B, Q, ˆC} is min–max normalized over\nthe participants,\n˜xu =\n\nϵ + (1 −ϵ)\nxu−minv xv\nmaxv xv−minv xv ,\nif x varies,\n1,\notherwise,\n(22)\nand the weight is the geometric mean\nsu =\n\u0010 ˜NαN\nu\n˜BαB\nu\n˜QαQ\nu\n˜CαC\nu\n\u0011\n1\nαN +αB+αQ+αC ,\nwu =\nsu\nP\nv∈P(ρ) sv\n,\n(23)\nwith αN = αB = αQ = αC = 1, ϵ = 0.05; the geometric mean\nis preferred to the plain product, which spans [ϵn, 1] for\nn non-constant factors and collapses a small cohort onto",
+    "start_idx": 712,
+    "end_idx": 1305,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c3",
+    "page_number": 9,
+    "text": "ean\nis preferred to the plain product, which spans [ϵn, 1] for\nn non-constant factors and collapses a small cohort onto\nits best client, whereas su spans [ϵn/4, 1].\nIn configura-\ntion B the weights are wu = Nu/ P\nv Nv as in FedAvg [12]\nand the local objective carries the proximal term, which\ntogether constitute FedProx [30] with client sampling re-\nplaced by (20) and fixed local computation.\nEvery ac-\ntive UAV stores one transition per slot and an admitted\nUAV has been active since the previous round, so admit-\nted UAVs report equal Nu and configuration B averages\nuniformly.",
+    "start_idx": 1185,
+    "end_idx": 1767,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c4",
+    "page_number": 9,
+    "text": "AV has been active since the previous round, so admit-\nted UAVs report equal Nu and configuration B averages\nuniformly. The configurations share the physical model,\ngate, observation, reward, association, local update, prox-\nimal coeﬀicient µ = 0.01 and redistribution rule, differing\nonly in wu; A is the default and B an established rule that\nis not a contribution here, and two reference settings are\nreported: FedAvg with µ = 0, and resource-aware weights\nwith ϵ = 0.25, µ = 0.\nAlgorithm 1 gives the procedure, in which all UAVs\nstart from the same initialization and evaluation uses the",
+    "start_idx": 1647,
+    "end_idx": 2239,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c5",
+    "page_number": 9,
+    "text": "5, µ = 0.\nAlgorithm 1 gives the procedure, in which all UAVs\nstart from the same initialization and evaluation uses the\nmean action on a fixed benchmark episode. The blockage\nstage dominates per-slot computation, with Nlinks = U +\nUK + K + U(U −1)/2 + UE + E segments tested against Nb\nAlgorithm 1 FedMAPPO Training and Deterministic Eval-\nuation\n1: Input:\nCity/physical parameters, U, K, Ne, training parameters,\nPPO/gating parameters, and aggregation rule.\n2: Initialization:\nGenerate environments; initialize θ1 for all UAVs,\nAdam states, and evaluation benchmark.\n3: Training:",
+    "start_idx": 2119,
+    "end_idx": 2700,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c6",
+    "page_number": 9,
+    "text": "Initialization:\nGenerate environments; initialize θ1 for all UAVs,\nAdam states, and evaluation benchmark.\n3: Training:\n4: for episode = 1 to Nep do\n5:\nReset users, eavesdroppers, UAV positions and batteries\n6:\nfor t = 1 to T do\n7:\nEach UAV forms ou(t), updates its observation statistics and\nsamples au(t) ∼πθu: displacement and bid bu\n8:\nMove the airborne UAVs and the users; propulsion energy (10)\n9:\nBlockage (1) and half-space (3) on all links; service modes and\nrelay helpers\n10:\nMatch bids on Ju,k (14) under Kcap; set phases by (5)\n11:",
+    "start_idx": 2580,
+    "end_idx": 3124,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c7",
+    "page_number": 9,
+    "text": "f-space (3) on all links; service modes and\nrelay helpers\n10:\nMatch bids on Ju,k (14) under Kcap; set phases by (5)\n11:\nRates with (6)–(8), secrecy (9) and relay energy; drain propul-\nsion and relay energy; compute F(t) (11)\n12:\nRewards ru(t) by (13); store the transition of every UAV that\nwas airborne\n13:\nif t mod Tﬂ= 0 then\n14:\nEvery UAV runs its local PPO update on (19); drain Ecmp\n15:\nGate: P ←{u : (20)}; drain Eup\nu\nfor u ∈P\n16:\nEach u ∈P uploads θu and (Nu, ¯Bu, Qu, ˆCu); the BS forms wu\nby the chosen rule and θg = P\nu∈P wuθu\n17:\nBroadcast to P: θu ←θg, θg\nu ←θg; other UAVs keep θu\n18:",
+    "start_idx": 3004,
+    "end_idx": 3603,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c8",
+    "page_number": 9,
+    "text": "u); the BS forms wu\nby the chosen rule and θg = P\nu∈P wuθu\n17:\nBroadcast to P: θu ←θg, θg\nu ←θg; other UAVs keep θu\n18:\nend if\n19:\nend for\n20:\nRun evaluation if the episode is an evaluation checkpoint\n21: end for\nboxes at cost O(NlinksNb), followed by O(U(K + E)M) for\nthe cascaded channels, O(U2K) for the cross terms (8) and\nO(UK log(UK)) for the association.\nEach upload carries\nS θ = 45 449 parameters, or 181.8 kB at 32 bits, and four\nscalars.\n5. Analytical Results\nProposition 1.",
+    "start_idx": 3483,
+    "end_idx": 3969,
+    "chunk_index": 8
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c9",
+    "page_number": 9,
+    "text": "upload carries\nS θ = 45 449 parameters, or 181.8 kB at 32 bits, and four\nscalars.\n5. Analytical Results\nProposition 1. Let RIS u have the steering vectors (2) and\nphases (5) for the source at angles of as\nu and the served user\nk, and let au,e be the steering vector toward eavesdropper\ne. Then\nGu,k =\n(as\nu)TΘuau,k\n2 = M2,\nGu,e =\n(as\nu)TΘuau,e\n2 =\naH\nu,kau,e\n2,\n(24)\nand neither depends on the source position. With ∆c =\ncos φe cos ψe\n−\ncos φk cos ψk\nand\n∆r = sin φe cos ψe −sin φk cos ψk,\nGu,e\nGu,k\n=\n\nsin(πMc∆c/2)\nMc sin(π∆c/2)\n\n2\nsin(πMr∆r/2)\nMr sin(π∆r/2)",
+    "start_idx": 3849,
+    "end_idx": 4411,
+    "chunk_index": 9
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c10",
+    "page_number": 9,
+    "text": "φk cos ψk\nand\n∆r = sin φe cos ψe −sin φk cos ψk,\nGu,e\nGu,k\n=\n\nsin(πMc∆c/2)\nMc sin(π∆c/2)\n\n2\nsin(πMr∆r/2)\nMr sin(π∆r/2)\n\n2\n.\n(25)\nProof. All entries of (2) have unit modulus, and by (5)\n[as\nu]me ȷθu,m = [au,k]m for every m, hence (as\nu)TΘux = aH\nu,kx\nfor any x ∈CM.\nTaking x = au,k gives M and x = au,e\nthe second expression in (24); no source quantity remains.\nSubstituting (2), aH\nu,kau,e = P\nmc e ȷπmc∆c P\nmr e ȷπmr∆r, and each\ngeometric sum has the modulus of a Dirichlet kernel, which\ngives (25), the ratio being one when ∆c or ∆r is an even\ninteger.",
+    "start_idx": 4291,
+    "end_idx": 4846,
+    "chunk_index": 10
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p9_c11",
+    "page_number": 9,
+    "text": "tric sum has the modulus of a Dirichlet kernel, which\ngives (25), the ratio being one when ∆c or ∆r is an even\ninteger.\nThe same algebra gives the cross term (8): the beam\nof UAV v aimed at its own user s places the array gain\n|aH\nv,sav,k|2 on user k, which is M2 when the two directions\n7",
+    "start_idx": 4726,
+    "end_idx": 5015,
+    "chunk_index": 11
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c0",
+    "page_number": 10,
+    "text": "Table 2: Simulation Parameters\nParameter\nValue\nArea, altitude band (X, Y; [Zmin, Zmax])\n620 m; [80, 120] m\nBuildings, footprint, height (Nb)\n72; 20–50 m; 20–70 m\nBS position (b)\n(−200, 0, 25) m\nUAVs, users, eavesdroppers (U, K, E)\n12, 50, 2\nUser speed, clusters\n1.5 m/s; 4 (60% of users)\nDemand weights (probability) (ϱk)\n0.5 (0.3), 1 (0.5), 2 (0.2)\nMaximum displacement (Dmax)\n30 m/slot\nRIS elements (M)\n10 × 10\nBS, relay, upload power (PB, Pr, Pup)\n15, 5, 2 W\nRelay receive power (Prx)\n0.1 W\nBandwidth, noise PSD (B, σ2)\n2 MHz, −174 dBm/Hz\nPath loss (β0, nL)\n30 dB, 2.2\nRician factor (κ)\n10",
+    "start_idx": 0,
+    "end_idx": 593,
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c1",
+    "page_number": 10,
+    "text": "ve power (Prx)\n0.1 W\nBandwidth, noise PSD (B, σ2)\n2 MHz, −174 dBm/Hz\nPath loss (β0, nL)\n30 dB, 2.2\nRician factor (κ)\n10\nSecrecy threshold (Rth)\n0.1 Mb/s\nSlots, slot duration (T, td)\n300, 1 s\nUAV mass (mu)\n2 kg\nBattery, initial charge (Bmax)\n110 kJ, U(0.6, 1.0)Bmax\nReserve, relay gate (Bmin)\n5%, 10% of Bmax\nUsers per UAV (Kcap)\n8\nRound period (Tﬂ)\n100 slots\nGate thresholds (Bth,Cth)\n0.2, 1 Mb/s\nComputation energy (Ecmp)\n5 J per update\nProximal coeﬀicient (µ)\n0.01\nAggregation exponents, floor (αN , αB, αQ, αC; ϵ)\n1; 0.05\nReward weights (λF , λS , λloc)\n10−4, 0.5, 0.3",
+    "start_idx": 473,
+    "end_idx": 1045,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c2",
+    "page_number": 10,
+    "text": "cient (µ)\n0.01\nAggregation exponents, floor (αN , αB, αQ, αC; ϵ)\n1; 0.05\nReward weights (λF , λS , λloc)\n10−4, 0.5, 0.3\nReward references, penalty (S ref, Rref, po)\n1, 10 Mb/s, 0.04\nLearning rate, discount, GAE (ηlr, γ, λGAE)\n3 × 10−4, 0.99, 0.95\nClip, epochs, minibatch (ϵc)\n0.2, 6, 256\nLoss coeﬀicients (cv, ce)\n0.5, 0.001\nHidden layers\n2 × 128, tanh\nEpisodes, evaluation period (Nep, Neval)\n3000, 15\ncoincide and falls off as the Dirichlet kernel (25) with their\nangular separation.",
+    "start_idx": 925,
+    "end_idx": 1411,
+    "chunk_index": 2
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c3",
+    "page_number": 10,
+    "text": "luation period (Nep, Neval)\n3000, 15\ncoincide and falls off as the Dirichlet kernel (25) with their\nangular separation. Averaging it over the schedule of UAV\nv and over the Rician fading of (4) yields the bracket of (7).\nIn the LoS limit without interference the eavesdropper-to-\nuser SNR ratio is [¯a2(∥qu −ve∥, 1)/¯a2(∥qu −wk∥, 1)]Gu,e/Gu,k,\nsince source power and source–RIS gain are common, so\nleakage is set by the position of the UAV relative to user\nand eavesdropper and cannot be reduced within (5).",
+    "start_idx": 1291,
+    "end_idx": 1799,
+    "chunk_index": 3
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c4",
+    "page_number": 10,
+    "text": "ommon, so\nleakage is set by the position of the UAV relative to user\nand eavesdropper and cannot be reduced within (5). The\nproposition concerns the deterministic LoS components,\nwhich carry the fraction κ/(1+κ) of the power of each hop,\nand requires the eavesdropper to be in LoS of the RIS.\nLemma 1. Let P(ρ) , ∅, ϵ ∈(0, 1], αN = αB = αQ = αC = 1,\nand let nc factors be non-constant. Then wu > 0, P\nu∈P wu =\n1, ∥θg∥2 ≤maxu∈P ∥θu∥2 and maxu wu/ minu wu ≤ϵ−nc/4.\nProof. By (22) every normalized factor lies in [ϵ, 1] and\nequals one when constant, so the product lies in [ϵnc, 1]\nand su ∈[ϵnc/4, 1].",
+    "start_idx": 1679,
+    "end_idx": 2278,
+    "chunk_index": 4
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c5",
+    "page_number": 10,
+    "text": "very normalized factor lies in [ϵ, 1] and\nequals one when constant, so the product lies in [ϵnc, 1]\nand su ∈[ϵnc/4, 1]. The weights are then positive and sum\nto one, the aggregation is a convex combination, which\ngives the norm bound by the triangle inequality, and the\nratio bound follows from the range of su.\nWith ϵ = 0.05, the maximum client weight ratio is\nanalytically bounded by 9.5 when data volumes are uni-\nform (nc = 3) and at most 20 otherwise.",
+    "start_idx": 2158,
+    "end_idx": 2615,
+    "chunk_index": 5
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c6",
+    "page_number": 10,
+    "text": "m client weight ratio is\nanalytically bounded by 9.5 when data volumes are uni-\nform (nc = 3) and at most 20 otherwise. Consequently,\nthe resource-aware aggregation differentiates participants\naccording to physical channel quality, battery reserves,\nand learning progress while strictly guaranteeing bounded\nclient influence.\n6. Performance Evaluation and Discussion\n6.1. Simulation Setup and Benchmark Schemes\nScenario and methods.",
+    "start_idx": 2495,
+    "end_idx": 2928,
+    "chunk_index": 6
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c7",
+    "page_number": 10,
+    "text": "t influence.\n6. Performance Evaluation and Discussion\n6.1. Simulation Setup and Benchmark Schemes\nScenario and methods. The city is a 3×3 grid of 200 m\nblocks with 10 m roads and eight buildings per block, be-\nlow the flight band, and the same city is used in every run\nTable 3: Compared Methods and Framework Configurations\nMethod\nClass\nDistinguishing feature\nPPO [10]\ncentralized\njoint policy\nSAC [27]\ncentralized\noff-policy, entropy-regularized\nTD3 [28]\ncentralized\noff-policy, twin critics\nEPPO-inspired [7] centralized\nepisodic reward revision\nIPPO\nmulti-agent FedMAPPO without parameter ex-",
+    "start_idx": 2808,
+    "end_idx": 3405,
+    "chunk_index": 7
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c8",
+    "page_number": 10,
+    "text": "cy, twin critics\nEPPO-inspired [7] centralized\nepisodic reward revision\nIPPO\nmulti-agent FedMAPPO without parameter ex-\nchange\nFedMAPPO-Avg\nframework\nFedAvg rule, µ = 0\nFedMAPPO-Prox\nframework\nFedProx rule, µ = 0.01\nFedMAPPO-RA\nframework\n(23), ϵ = 0.05, µ = 0.01 (default)\n(Table 2).\nInitial charges are drawn from [0.6, 1.0]Bmax,\nso the battery gate acts within an episode.",
+    "start_idx": 3285,
+    "end_idx": 3660,
+    "chunk_index": 8
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c9",
+    "page_number": 10,
+    "text": "= 0.01 (default)\n(Table 2).\nInitial charges are drawn from [0.6, 1.0]Bmax,\nso the battery gate acts within an episode. Table 3 lists\nthe methods.\nThe centralized learners control the fleet\nwith one policy over the concatenated observation (540\ndimensions) and joint action (48 dimensions), trained on\nthe mean agent reward; the EPPO-inspired learner adds\nthe episodic reward revision of [7].",
+    "start_idx": 3540,
+    "end_idx": 3933,
+    "chunk_index": 9
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c10",
+    "page_number": 10,
+    "text": "(48 dimensions), trained on\nthe mean agent reward; the EPPO-inspired learner adds\nthe episodic reward revision of [7]. IPPO is FedMAPPO\nwithout parameter exchange, sharing environment, obser-\nvation, reward, association and local update, so the com-\nparison isolates the observed effect of parameter exchange\nwithin this experimental setup.\nThe three FedMAPPO\nrows are the same framework with the three aggregation\nrules.\nObjective, reward and reported metrics. Three quan-\ntities are kept apart.",
+    "start_idx": 3813,
+    "end_idx": 4311,
+    "chunk_index": 10
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c11",
+    "page_number": 10,
+    "text": "framework with the three aggregation\nrules.\nObjective, reward and reported metrics. Three quan-\ntities are kept apart. The optimization objective is F(t)\nof (11), the fairness-weighted energy eﬀiciency in bit/J:\ndelivered bits per joule of propulsion and relay energy,\nscaled by Jain’s index, so that a policy cannot score by\nserving only nearby users or by flying less while serving\nfewer. It is the quantity (P1) maximizes and the primary\nperformance metric reported throughout this paper, eval-\nuated as the episode-mean of F(t) from (11).",
+    "start_idx": 4191,
+    "end_idx": 4735,
+    "chunk_index": 11
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c12",
+    "page_number": 10,
+    "text": "s and the primary\nperformance metric reported throughout this paper, eval-\nuated as the episode-mean of F(t) from (11). The out-of-\nbounds penalty po appears exclusively in the per-agent RL\nreward (13) to enforce spatial flight boundaries and is not\nsubtracted from the reported objective F. The RL reward\nis the learning signal and is never reported as performance.\nThe reported metrics are F; the sum rate (Mb/s); Jain’s\nindex; the number of unserved users; the mean secrecy\nrate of served users (Mb/s) and the SOP; the fleet energy\nper episode (kJ, propulsion and relay); and the energy eﬀi-",
+    "start_idx": 4615,
+    "end_idx": 5210,
+    "chunk_index": 12
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c13",
+    "page_number": 10,
+    "text": "y\nrate of served users (Mb/s) and the SOP; the fleet energy\nper episode (kJ, propulsion and relay); and the energy eﬀi-\nciency (EE, Mbit/J), the delivered megabits of an episode\ndivided by its fleet energy, without the fairness factor.\nProtocol and statistics.\nEvery method receives the\nsame seed sequence, seeds 0 to 4 (5 independent runs per\nmethod, 40 jobs total) across 3000 training episodes.",
+    "start_idx": 5090,
+    "end_idx": 5488,
+    "chunk_index": 13
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c14",
+    "page_number": 10,
+    "text": "ives the\nsame seed sequence, seeds 0 to 4 (5 independent runs per\nmethod, 40 jobs total) across 3000 training episodes. Eval-\nuation is performed at initialization (episode 0) and peri-\nodically at every Neval = 15 completed training episodes,\nyielding 1+200 = 201 deterministic evaluation checkpoints\nper run (Algorithm 1). Post-training evaluations are la-\nbeled by the corresponding 0-based checkpoint index, so\nthe evaluation after training episode 15 is recorded as\ncheckpoint 14, episode 30 as checkpoint 29, and so on\n(checkpoints 14, 29, …, 2999).",
+    "start_idx": 5368,
+    "end_idx": 5924,
+    "chunk_index": 14
+  },
+  {
+    "chunk_id": "VEHCOM-D-26-01407_235f3ea43da79ce7_p10_c15",
+    "page_number": 10,
+    "text": "training episode 15 is recorded as\ncheckpoint 14, episode 30 as checkpoint 29, and so on\n(checkpoints 14, 29, …, 2999). The terminal performance\nof each run is summarized by the sample mean across the\nfinal ten deterministic evaluation checkpoints (episodes\n2864, 2879, …, 2999) within the final 150-episode evalua-\n8",
+    "start_idx": 5804,
+    "end_idx": 6121,
+    "chunk_index": 15
+  }
+]
